@@ -1,9 +1,10 @@
 terraform {
-#  required_providers {
-#    aws = {
-#      source = "hashicorp/aws"
-#    }
-#  }
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
   backend "s3" {
     bucket  = "jacobpevans-tf-states"
     key     = "static-website"
@@ -24,3 +25,4 @@ module "static-website" {
   website-domain-main     = "jacobpevans.com"
   website-domain-redirect = "www.jacobpevans.com"
 }
+
