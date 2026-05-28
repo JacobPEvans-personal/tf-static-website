@@ -20,7 +20,8 @@ provider "aws" {
 # Enable bucket versioning
 module "static-website" {
   source                  = "cloudmaniac/static-website/aws"
-#  version = "1.0.1"
+  version                 = "~> 1.0"
   website-domain-main     = "jacobpevans.com"
   website-domain-redirect = "www.jacobpevans.com"
 }
+
