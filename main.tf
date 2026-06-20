@@ -80,7 +80,7 @@ resource "aws_lambda_function" "security_headers" {
 
 module "static-website" {
   source  = "cloudmaniac/static-website/aws"
-#  version = "1.0.1"
+  version = "~> 1.0"
   website-domain-main                   = "jacobpevans.com"
   website-domain-redirect               = "www.jacobpevans.com"
   cloudfront_lambda_function_arn        = aws_lambda_function.security_headers.qualified_arn
