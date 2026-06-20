@@ -1,0 +1,38 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a2e;
+        color: #c9d1d9;
+    }
+
+    section.resume-section {
+        background-color: #1a1a2e;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #e6edf3;
+    }
+
+    a {
+        color: #58a6ff;
+    }
+
+    a:hover {
+        color: #79b9ff;
+    }
+
+    hr {
+        border-color: #30363d;
+    }
+
+    .text-muted {
+        color: #8b949e !important;
+    }
+
+    .social-icons .social-icon {
+        background-color: #30363d;
+    }
+
+    .social-icons .social-icon:hover {
+        background-color: #dc3545;
+    }
+}
